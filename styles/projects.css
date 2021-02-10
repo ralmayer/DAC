@@ -1,0 +1,112 @@
+section.home.projects {
+  margin-top: 5rem;
+
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.project .text-container .text-col > * + * {
+  margin-top: 1rem;
+}
+
+.project .text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project.flipped .text-container {
+  justify-content: flex-end;
+}
+
+.project .text-col h3 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1rem;
+}
+
+.project .text-col h1 {
+  color: #f7f8f8;
+  letter-spacing: -0.04rem;
+  line-height: 1.2em;
+  font-size: 2.8rem;
+}
+
+.project.qgit .text-col h3 {
+  background-image: linear-gradient(90.47deg, #d5344d -16.27%, #ad2570 114.23%);
+}
+
+#ass {
+  position: fixed;
+}
+
+.project .image-shell {
+  position: relative;
+}
+
+.project.flipped .image-shell {
+  order: -1;
+}
+
+.project.flipped .image-shell .image-container {
+  left: auto;
+  right: 0;
+}
+
+.projects .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project + .project {
+  margin-top: 15rem;
+}
+
+.project.row.qgit {
+  height: 591px;
+}
+
+.project .image-container {
+  width: 1008px;
+  height: 591px;
+}
+
+/* adjust next two rulesets with every individual class in mind */
+
+.project .image-container[data-isclicked="true"] {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  margin-left: -573.93px;
+  width: 1147.86px;
+  height: 673px;
+  z-index: 1000000;
+}
+
+/* this fixed a bug where projects with flipped class were flown out into some faraway ass. fuck framer */
+
+.project.flipped .image-container[data-isclicked="true"] {
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  margin-left: -573.93px;
+  width: 1147.86px;
+  height: 673px;
+  z-index: 1000000;
+}
+
+.project .project-curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+/* 
+.project .project-curtain[data-isclicked="true"] {
+  display: block;
+  top: 0;
+  opacity: 1;
+} */

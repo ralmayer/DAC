@@ -1,0 +1,103 @@
+img {
+  object-fit: cover;
+}
+
+.rel {
+  position: relative;
+}
+
+.bg\:gray {
+  background-color: gray;
+}
+
+.mg-top\:10 {
+  margin-top: 10rem;
+}
+
+.h\:500 {
+  height: 500px;
+}
+
+.z-index\:2000 {
+  z-index: 2000;
+}
+
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.tile-grid {
+  max-width: 1440px;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-column-gap: 1em;
+  grid-template-areas: "rect1 rect2";
+}
+
+.tile-grid[data-isOpen="true"] {
+  grid-template-columns: repeat(1, 100%);
+  grid-template-areas: "rect1";
+}
+
+.rect {
+  background-color: gray;
+}
+
+.rect .rect1 {
+  grid-area: rect1;
+}
+
+.rect .rect2 {
+  grid-area: rect2;
+}
+
+.ass-parent {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ass-child {
+  width: 500px;
+  height: 500px;
+  background: blue;
+}
+
+.animate-child {
+  background: red;
+}
+
+.animate-child[data-isclicked="true"] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+}
+
+.asscontainer {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  top: 30%;
+  left: 30%;
+  background: white;
+}
+
+.asscontainer .kid {
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  background: red;
+}

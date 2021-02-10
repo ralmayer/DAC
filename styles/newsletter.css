@@ -1,0 +1,76 @@
+.home.newsletter {
+  margin-top: 5rem;
+}
+
+.home.newsletter .section-content {
+  background: #1d1d1f;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: none;
+  transition: 400ms;
+}
+
+.home.newsletter .text-col {
+  text-align: center;
+  max-width: 50ch;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home.newsletter .text-col h2 {
+  color: white;
+  font-size: 2.4rem;
+}
+
+.home.newsletter .text-col p {
+  max-width: 30ch;
+  color: #95a2b3;
+}
+
+.home.newsletter .text-col > * + * {
+  margin-top: 1rem;
+}
+
+.email-container {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  background: black;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email-container form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.email-container form > * {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 1.3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.email-container form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90.47deg, #d5344d -16.27%, #ad2570 114.23%);
+}
+
+.email-container form button > * {
+  text-align: center;
+}

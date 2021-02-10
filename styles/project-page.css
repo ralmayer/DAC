@@ -1,0 +1,45 @@
+.project-page {
+  background: black;
+}
+
+.project-page .exit-button-container {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.project-page .top {
+  margin-top: 2rem;
+}
+
+.project-page .img-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1147.86px;
+  height: 673px;
+}
+
+.project-intro-description {
+  margin-top: 2rem;
+}
+
+.project-intro-description .row {
+  justify-content: space-between;
+}
+
+.project-intro-description .row > * {
+  max-width: 25%;
+}
+
+.project-intro-description .project-intro-title h3 {
+  color: #a1a1a6;
+  font-size: 1rem;
+}
+
+.project-intro-description .row > * > p {
+  color: white;
+  margin-top: 1rem;
+}

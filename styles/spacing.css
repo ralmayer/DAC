@@ -1,0 +1,39 @@
+.text-col > * + * {
+  margin-top: 0.5rem;
+}
+
+.text-col > * + .bodylink-container {
+  margin-top: 1rem;
+}
+
+.navlink + .navlink {
+  margin-left: 1rem;
+}
+
+.bodylink + .bodylink {
+  margin-left: 3rem;
+}
+
+.iphone-home-section + .iphone-home-section {
+  margin-top: 1rem;
+}
+
+/* .iphone-card.about > * + * {
+  margin-top: 20px;
+} */
+
+.iphone-card.about > * + header {
+  margin-top: 45px;
+}
+
+.iphone-card > * + header {
+  margin-top: 45px;
+}
+
+.iphone-career > * + * {
+  margin-top: 11px;
+}
+
+.iphone-career + .iphone-career {
+  margin-top: 20px;
+}

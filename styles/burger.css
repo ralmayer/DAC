@@ -1,0 +1,28 @@
+.burger-menu > * + * {
+  margin-top: 0.2rem;
+}
+
+.burger-row {
+  width: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: ease-in 350ms;
+}
+
+.burger-cube {
+  background: white;
+  width: 2px;
+  height: 2px;
+
+  transition: ease-in 200ms;
+}
+
+.burger-menu:hover > * {
+  justify-content: space-between;
+}
+
+.burger-menu:hover > * > * {
+  width: 8px;
+  height: 1px;
+}

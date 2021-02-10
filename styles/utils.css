@@ -1,0 +1,11 @@
+.bg-g1 {
+  background-color: var(--gray-1);
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,190 @@
+.iphone-container {
+  position: relative;
+  width: 375px;
+  height: 746px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iphone-frame-element {
+  position: absolute;
+  width: 375px;
+  left: 0;
+}
+.iphone-frame-element.top {
+  top: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+.iphone-frame-element.body {
+  top: 60px;
+  height: 626px;
+}
+
+.iphone-frame-element.bottom {
+  bottom: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+.iphone-home {
+  width: 322px;
+  margin-left: 27px;
+  height: 100%;
+  background-color: #151516;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.iphone-home .iphone-home-halfsection {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.iphone-home .iphone-home-halfsection.buttons {
+  align-items: flex-end;
+}
+
+.iphone-home .iphone-home-halfsection .iphone-home-button-grid {
+  max-width: 100%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(2, 128px);
+  grid-template-rows: repeat(2, 128px);
+  grid-row-gap: 0.7rem;
+  grid-column-gap: 0.7rem;
+  background-color: none;
+}
+
+.iphone-home-button {
+  background: linear-gradient(
+    345.36deg,
+    #242531 -13.81%,
+    rgba(40, 41, 44, 0) 142.3%
+  );
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iphone-home-button h2 {
+  color: #e0e0e0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.iphone-home-button.contact h2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90.47deg, #d5344d -16.27%, #ad2570 114.23%);
+}
+
+.iphone-home-button.cv {
+  background: linear-gradient(90.47deg, #d5344d -16.27%, #ad2570 114.23%);
+}
+
+.iphone-card {
+  width: 322px;
+  left: 27px;
+  height: 1000px;
+  background: white;
+  position: absolute;
+
+  border-radius: 40px;
+  z-index: 0;
+  padding: 0.6rem 1rem;
+  z-index: 1000;
+}
+
+.divider {
+  width: 60px;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+.iphone-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iphone-card header h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.iphone-card.about {
+  top: 30%;
+}
+
+.iphone-card.about h2 {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+}
+
+.iphone-card.about h2 span {
+  font-size: 36px;
+}
+
+.iphone-card.about p {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+
+.iphone-card.cv {
+  background: linear-gradient(90.47deg, #d5344d -16.27%, #ad2570 114.23%);
+}
+
+.iphone-card.cv {
+  padding: 0.6rem 0.3rem;
+  /* top: 15%; */
+}
+
+.iphone-card.cv header {
+  padding: 0 0.7rem;
+  color: white;
+}
+.iphone-career {
+  background: rgba(21, 21, 22, 0.36);
+  padding: 1rem 0.7rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.iphone-career .period {
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 14px;
+}
+
+.iphone-career .position {
+  color: rgba(255, 255, 255, 0.59);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.iphone-career .position .company {
+  color: white;
+  font-weight: normal;
+}
