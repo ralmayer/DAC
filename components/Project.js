@@ -1,9 +1,11 @@
 import Bodylink from "./Bodylink";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import { useInView } from "react-intersection-observer";
+
+import AnimationContext from "../contexts/AnimationContext";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9], delay: 1 };
 
@@ -12,6 +14,8 @@ export default function Project({
   variants,
   childVariants,
 }) {
+  const { animationState, setAnimationState } = useContext(AnimationContext);
+
   const [triggered, setTriggered] = useState(false);
 
   const { ref, inView } = useInView({
@@ -23,6 +27,13 @@ export default function Project({
     setTriggered((prevState) => !prevState);
   };
 
+  useEffect(
+    () =>
+      inView &&
+      setAnimationState((prevState) => ({ ...prevState, [title]: true })),
+    [inView]
+  );
+
   return (
     <motion.div
       className={`project row qgit ${flipped && "flipped"}`}
@@ -30,7 +41,7 @@ export default function Project({
       style={triggered ? { zIndex: 1000000 } : {}}
       variants={variants}
       initial={false}
-      animate={inView ? "visible" : "hidden"}
+      animate={animationState[title] ? "visible" : "hidden"}
       ref={ref}
     >
       <motion.div className={`text-container large-7`}>

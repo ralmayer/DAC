@@ -1,16 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import { useInView } from "react-intersection-observer";
 
-const initial = { initialized: false, content: "" };
-
-const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
-
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+import AnimationContext from "../contexts/AnimationContext";
 
 export default function Newsletter({ variants, childVariants }) {
+  const { animationState, setAnimationState } = useContext(AnimationContext);
+
   const [email, setEmail] = useState(false);
 
   const { ref, inView = true } = useInView({
@@ -18,11 +16,18 @@ export default function Newsletter({ variants, childVariants }) {
     triggerOnce: true,
   });
 
+  useEffect(
+    () =>
+      inView &&
+      setAnimationState((prevState) => ({ ...prevState, newsletter: true })),
+    [inView]
+  );
+
   return (
     <section className="home newsletter" ref={ref}>
       <motion.div
         initial={false}
-        animate={inView ? "visible" : "hidden"}
+        animate={animationState.newsletter ? "visible" : "hidden"}
         variants={variants}
         className="section-content"
       >

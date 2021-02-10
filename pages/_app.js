@@ -15,11 +15,16 @@ import "../styles/project-page.css";
 
 import { AnimatePresence } from "framer-motion";
 
+import AnimationContextWrapper from "../contexts/AnimationContextWrapper";
+
 function MyApp({ Component, pageProps, router }) {
   return (
-    <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} key={router.route} />
-    </AnimatePresence>
+    <AnimationContextWrapper>
+      {" "}
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
+    </AnimationContextWrapper>
   );
 }
 

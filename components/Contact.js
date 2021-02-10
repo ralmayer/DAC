@@ -2,11 +2,23 @@ import Bodylink from "../components//Bodylink";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import { useContext, useEffect } from "react";
+import AnimationContext from "../contexts/AnimationContext";
+
 export default function Contact({ variants, childVariants }) {
+  const { animationState, setAnimationState } = useContext(AnimationContext);
+
   const { ref, inView = true } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
+
+  useEffect(
+    () =>
+      inView &&
+      setAnimationState((prevState) => ({ ...prevState, contacts: true })),
+    [inView]
+  );
 
   return (
     <motion.section className="home contact" ref={ref}>
@@ -16,7 +28,7 @@ export default function Contact({ variants, childVariants }) {
           <motion.div
             className="text-col"
             initial={false}
-            animate={inView ? "visible" : "hidden"}
+            animate={animationState.contacts ? "visible" : "hidden"}
             exit="hidden"
             variants={variants}
           >

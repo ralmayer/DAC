@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-
+import { useEffect, useContext } from "react";
+import AnimationContext from "../contexts/AnimationContext";
 import Navlink from "../components/Navlink";
 import Bodylink from "../components//Bodylink";
 import Iphone from "../components/Iphone";
@@ -32,10 +32,19 @@ const item = {
 };
 
 export default function Home({ projectsData }) {
-  const { ref, inView = true } = useInView({
+  const { animationState, setAnimationState } = useContext(AnimationContext);
+
+  const { ref, inView } = useInView({
     threshold: 0.3,
     triggerOnce: true,
   });
+
+  useEffect(
+    () =>
+      inView &&
+      setAnimationState((prevState) => ({ ...prevState, about: true })),
+    [inView]
+  );
 
   return (
     <>
@@ -113,7 +122,7 @@ export default function Home({ projectsData }) {
           className="home about"
           ref={ref}
           initial={false}
-          animate={inView ? "visible" : "hidden"}
+          animate={animationState.about ? "visible" : "hidden"}
           exit="hidden"
           variants={container}
         >
@@ -256,7 +265,7 @@ export async function getStaticProps() {
     },
     {
       id: 3,
-      title: "Civita",
+      title: "Player",
       pitch: "one app for ass eating",
       text:
         "I eat ass. I eat a lot of ass. From brown to white to Asian I eat a lot of ass.",

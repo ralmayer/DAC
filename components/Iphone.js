@@ -133,7 +133,11 @@ export default function Iphone() {
                     height: "20px",
                   }}
                 >
-                  <Image src="/exit-button-black.svg" {...imageProps} />
+                  <Image
+                    src="/exit-button-black.svg"
+                    {...imageProps}
+                    loading="eager"
+                  />
                 </div>
               </header>
               <h2>
@@ -179,7 +183,11 @@ export default function Iphone() {
                     height: "22px",
                   }}
                 >
-                  <Image src="/exit-button-grey.svg" {...imageProps} />
+                  <Image
+                    src="/exit-button-grey.svg"
+                    {...imageProps}
+                    loading="eager"
+                  />
                 </div>
               </header>
 

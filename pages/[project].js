@@ -58,6 +58,7 @@ export default function ProjectPage() {
                 layout="fill"
                 objectFit="contain"
                 objectPosition="50% 50%"
+                loading="eager"
               />
             </a>
           </Link>
