@@ -4,7 +4,6 @@ import Navlink from "../components/Navlink";
 import Bodylink from "../components//Bodylink";
 import Iphone from "../components/Iphone";
 import Position from "../components/Position";
-import Burger from "../components/burger";
 import Projects from "../components/Projects";
 import Newsletter from "../components/Newsletter";
 import Contact from "../components/Contact";
@@ -68,10 +67,10 @@ export default function Home({ projectsData }) {
         >
           {" "}
           <Navlink name="Resume" destination="e" importance="1" />
-          <Navlink name="About" destination="e" />
-          <Navlink name="Case Studies" destination="e" />
-          <Navlink name="Newsletter" destination="e" />
-          <Navlink name="Contacts" destination="e" importance="2" />
+          <Navlink name="About" destination="#about" />
+          <Navlink name="Case Studies" destination="#projects" />
+          <Navlink name="Newsletter" destination="#newsletter" />
+          <Navlink name="Contacts" destination="#contact" importance="2" />
         </div>
         <div
           className="large-1"
@@ -81,7 +80,11 @@ export default function Home({ projectsData }) {
             justifyContent: "flex-end",
           }}
         >
-          <span className="paperplane" />
+          <span
+            className="paperplane"
+            // replace with actual email later
+            onClick={() => (window.location = "mailto:xyz@abc.com")}
+          />
         </div>
       </nav>
       <main>
@@ -120,13 +123,13 @@ export default function Home({ projectsData }) {
         </section>
         <motion.section
           className="home about"
+          id="about"
           ref={ref}
           initial={false}
           animate={animationState.about ? "visible" : "hidden"}
           exit="hidden"
           variants={container}
         >
-          {/* !!! started converting this into motion div. finish later !!! */}
           <div className="about-grid">
             <motion.div className="tech" variants={item}>
               <div className="tech-icons-grid-container">

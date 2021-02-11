@@ -6,8 +6,6 @@ const initial = { about: false, cv: false, projects: false, contact: false };
 
 const jobFocus = { civita: false, admorris: false, goic: false };
 
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9], delay: 0.7 };
-
 const imageProps = {
   layout: "fill",
   objectFit: "contain",

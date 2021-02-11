@@ -49,7 +49,7 @@ export default function ProjectPage() {
           exit="hidden"
         >
           {" "}
-          <Link href={`/?counter=10`} scroll={false}>
+          <Link href={`/`} scroll={false}>
             <a>
               {" "}
               <Image

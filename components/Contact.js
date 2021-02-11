@@ -21,7 +21,7 @@ export default function Contact({ variants, childVariants }) {
   );
 
   return (
-    <motion.section className="home contact" ref={ref}>
+    <motion.section className="home contact" id="contact" ref={ref}>
       {" "}
       <div className="section-content">
         <div className="row">

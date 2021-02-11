@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Position({ pos }) {
   const [active, setActive] = useState(false);

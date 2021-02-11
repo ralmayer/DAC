@@ -1,4 +1,4 @@
-export default function Credits({ variants }) {
+export default function Credits() {
   return (
     <section className="home credits">
       <div className="row special-thanks">

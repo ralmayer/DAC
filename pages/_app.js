@@ -4,7 +4,6 @@ import "../styles/spacing.css";
 import "../styles/utils.css";
 import "../styles/flexUtils.css";
 import "../styles/homeAbout.css";
-import "../styles/e.css";
 import "../styles/custom.css";
 import "../styles/burger.css";
 import "../styles/projects.css";

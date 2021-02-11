@@ -24,7 +24,7 @@ export default function Newsletter({ variants, childVariants }) {
   );
 
   return (
-    <section className="home newsletter" ref={ref}>
+    <section className="home newsletter" id="newsletter" ref={ref}>
       <motion.div
         initial={false}
         animate={animationState.newsletter ? "visible" : "hidden"}
