@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import Credits from "../components/Credits";
 
 import Image from "next/image";
+import Head from "next/head";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -135,6 +136,7 @@ export default function Home({ projectsData }) {
               <div className="tech-icons-grid-container">
                 <div className="tech-icon js">
                   <Image
+                    alt="js"
                     src="/js.svg"
                     layout="fill"
                     objectFit="contain"
@@ -143,6 +145,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="ts"
                     src="/ts.svg"
                     layout="fill"
                     objectFit="contain"
@@ -151,6 +154,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="react.js"
                     src="/react.svg"
                     layout="fill"
                     objectFit="contain"
@@ -159,6 +163,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="next.js"
                     src="/next.svg"
                     layout="fill"
                     objectFit="contain"
@@ -167,6 +172,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="node.js"
                     src="/node.svg"
                     layout="fill"
                     objectFit="contain"
@@ -175,6 +181,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="graphql"
                     src="/graphql.svg"
                     layout="fill"
                     objectFit="contain"
@@ -183,6 +190,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="google cloud services"
                     src="/gcp.svg"
                     layout="fill"
                     objectFit="contain"
@@ -191,6 +199,7 @@ export default function Home({ projectsData }) {
                 </div>
                 <div className="tech-icon js">
                   <Image
+                    alt="swiftlang"
                     src="/swift.svg"
                     layout="fill"
                     objectFit="contain"

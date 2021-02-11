@@ -37,6 +37,7 @@ export default function Iphone() {
       <div className="iphone-container">
         <div className="iphone-frame-element body">
           <Image
+            alt="iphone body"
             src="/Iphone-large-body.png"
             layout="fill"
             objectFit="contain"
@@ -48,6 +49,7 @@ export default function Iphone() {
           {" "}
           <div className="iphone-home-halfsection">
             <Image
+              alt="logo"
               src="/Iphone-home-logo.svg"
               layout="fill"
               objectFit="contain"
@@ -132,6 +134,7 @@ export default function Iphone() {
                   }}
                 >
                   <Image
+                    alt="close button"
                     src="/exit-button-black.svg"
                     {...imageProps}
                     loading="eager"
@@ -182,6 +185,7 @@ export default function Iphone() {
                   }}
                 >
                   <Image
+                    alt="close button"
                     src="/exit-button-grey.svg"
                     {...imageProps}
                     loading="eager"
@@ -364,6 +368,7 @@ export default function Iphone() {
         </AnimatePresence>
         <div className="iphone-frame-element top">
           <Image
+            alt="iphone top"
             src="/Iphone-large-top.png"
             layout="fill"
             objectFit="contain"
@@ -374,6 +379,7 @@ export default function Iphone() {
 
         <div className="iphone-frame-element bottom">
           <Image
+            alt="iphone bottom"
             src="/Iphone-large-bottom.png"
             layout="fill"
             objectFit="contain"
