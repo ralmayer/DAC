@@ -121,8 +121,8 @@ export default function Home({ projectsData }) {
                     much ass. It affects my nutrition.{" "}
                   </p>
                   <div className="bodylink-container">
-                    <Bodylink name={"Case Studies"} destination={"e"} />
-                    <Bodylink name={"Learn more"} destination={"e"} />
+                    <Bodylink name={"Case Studies"} destination="#projects" />
+                    <Bodylink name={"Learn more"} destination="#about" />
                   </div>
                 </div>
                 <div className="large-5 column">
