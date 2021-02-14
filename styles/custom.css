@@ -3,6 +3,12 @@
   color: #d3d3d3;
 }
 
+@media screen and (max-width: 1300px) {
+  .hero-section h1 {
+    color: red;
+  }
+}
+
 .hero-section .important {
   color: white;
   font-weight: 600;
