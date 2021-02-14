@@ -4,7 +4,7 @@ export default function Bodylink({ name, destination, func }) {
   return (
     <span className="bodylink">
       {" "}
-      <Link href={destination} scroll={false}>
+      <Link href={destination}>
         <a onClick={() => func && func(true)}>
           {" "}
           {name} {">"}

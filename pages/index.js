@@ -50,7 +50,10 @@ export default function Home({ projectsData }) {
     <>
       <Head>
         <title>Leon Mayer</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1, maximum-scale=1, width=device-width"
+        />
         <meta name="description" content="Fullstack developer and designer" />
         <meta
           name="keywords"
