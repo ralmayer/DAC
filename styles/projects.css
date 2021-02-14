@@ -100,8 +100,8 @@ section.home.projects {
   top: 0;
   left: 0;
   z-index: 2000;
-  width: 100vw;
-  height: 100vh;
+  width: 1500px;
+  height: 1500px;
   background-color: black;
 }
 /* 
