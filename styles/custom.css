@@ -37,6 +37,12 @@ nav .navlink {
   transform-style: preserve-3d;
 }
 
+@media screen and (max-width: 1300px) {
+  nav .navlink {
+    font-size: 0.8rem;
+  }
+}
+
 nav .navlink:hover {
   color: white;
   transition: color 350ms ease-in-out;

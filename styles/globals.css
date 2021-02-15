@@ -52,7 +52,7 @@ body {
   font-family: -apple-system, "Inter", BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overscroll-behavior-y: none;
-  overflow-x: hidden;
+  overflow-x: hiddeng;
 
   -webkit-font-smoothing: antialiased;
 }

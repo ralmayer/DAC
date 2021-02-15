@@ -244,7 +244,7 @@ export default function Iphone() {
                     </motion.div>
                     <AnimatePresence>
                       {cvFocus.civita ? (
-                        <p style={{ fontSize: "14px", color: "#535353" }}>
+                        <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore magna aliqua.
@@ -299,7 +299,7 @@ export default function Iphone() {
                     </motion.div>
                     <AnimatePresence>
                       {cvFocus.admorris ? (
-                        <p style={{ fontSize: "14px", color: "#535353" }}>
+                        <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore magna aliqua.
@@ -351,7 +351,7 @@ export default function Iphone() {
                     </motion.div>
                     <AnimatePresence>
                       {cvFocus.goic ? (
-                        <p style={{ fontSize: "14px", color: "#535353" }}>
+                        <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
                           dolore magna aliqua.

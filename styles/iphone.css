@@ -184,6 +184,17 @@
   line-height: 22px;
 }
 
+.iphone-career p {
+  font-size: 14px;
+  color: #535353;
+}
+
+@media screen and (max-width: 1300px) {
+  .iphone-career p {
+    font-size: 0.8rem;
+  }
+}
+
 .iphone-career .position .company {
   color: white;
   font-weight: normal;
