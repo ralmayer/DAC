@@ -14,14 +14,39 @@ section.home.projects {
   align-items: center;
 }
 
+@media screen and (max-width: 1064px) {
+  .project .text-container {
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .project .text-container .text-col {
+    text-align: center;
+  }
+}
+
 .project.flipped .text-container {
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1064px) {
+  .project.flipped .text-container {
+    justify-content: center;
+  }
 }
 
 .project .text-col h3 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1064px) {
+  .project .text-col h3 {
+    display: none;
+  }
 }
 
 .project .text-col h1 {
@@ -43,6 +68,13 @@ section.home.projects {
   position: relative;
 }
 
+@media screen and (max-width: 1064px) {
+  .project .image-shell {
+    width: 750px;
+    height: 439px;
+  }
+}
+
 .project.flipped .image-shell {
   order: -1;
 }
@@ -50,6 +82,14 @@ section.home.projects {
 .project.flipped .image-shell .image-container {
   left: auto;
   right: 0;
+}
+
+@media screen and (max-width: 1064px) {
+  .project.flipped .image-shell .image-container {
+    left: 50%;
+    margin-left: -375px;
+    right: auto;
+  }
 }
 
 .projects .image-container {
@@ -62,37 +102,63 @@ section.home.projects {
   margin-top: 15rem;
 }
 
-.project.row.qgit {
+.project.row {
   height: 591px;
 }
+
+@media screen and (max-width: 1064px) {
+  .project.row {
+    height: auto;
+  }
+}
+/* 
+adjust this for new images in the future */
 
 .project .image-container {
   width: 1008px;
   height: 591px;
 }
 
-/* adjust next two rulesets with every individual class in mind */
+@media screen and (max-width: 1064px) {
+  .project .image-container {
+    width: 750px;
+    height: 439px;
+    left: 50%;
+    margin-left: -375px;
+  }
+}
 
-.project .image-container[data-isclicked="true"] {
-  position: fixed;
-  top: 2rem;
-  left: 50%;
-  margin-left: -573.93px;
-  width: 1147.86px;
-  height: 673px;
-  z-index: 1000000;
+@media screen and (min-width: 1200px) {
+  .project .image-container[data-isclicked="true"] {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    margin-left: -573.93px;
+    width: 1147.86px;
+    height: 673px;
+    z-index: 1000000;
+  }
+
+  .project.flipped .image-container[data-isclicked="true"] {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    margin-left: -573.93px;
+    width: 1147.86px;
+    height: 673px;
+    z-index: 1000000;
+  }
 }
 
 /* this fixed a bug where projects with flipped class were flown out into some faraway ass. fuck framer */
 
-.project.flipped .image-container[data-isclicked="true"] {
-  position: fixed;
-  top: 5rem;
-  left: 50%;
-  margin-left: -573.93px;
-  width: 1147.86px;
-  height: 673px;
-  z-index: 1000000;
+@media screen and (max-width: 1064px) {
+  .project .image-container[data-isclicked="true"] {
+    opacity: 0;
+  }
+  .project.flipped .image-container[data-isclicked="true"] {
+    opacity: 0;
+  }
 }
 
 .project .project-curtain {

@@ -2,6 +2,12 @@
   padding-top: 5rem;
 }
 
+@media screen and (max-width: 1064px) {
+  .home.newsletter {
+    padding: 0 2rem;
+  }
+}
+
 .home.newsletter .section-content {
   background: #1d1d1f;
   border-radius: 20px;

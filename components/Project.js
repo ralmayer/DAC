@@ -44,7 +44,7 @@ export default function Project({
       animate={animationState[title] ? "visible" : "hidden"}
       ref={ref}
     >
-      <motion.div className={`text-container large-7`}>
+      <motion.div className={`text-container large-7 medium-12`}>
         <div className="text-col">
           <motion.h3 variants={childVariants}>{title}</motion.h3>
           {/* make proper css */}
@@ -80,11 +80,10 @@ export default function Project({
         exit={{ display: "block", opacity: 1 }}
         transition={{ duration: 1 }}
       ></motion.div>
-      <div className={`image-shell large-5 `}>
+      <div className={`image-shell large-5 medium-12`}>
         <motion.div
           layout
           className="image-container"
-          onClick={handleClick}
           data-isclicked={triggered}
           transition={{ ...transition, delay: 1.2 }}
         >
