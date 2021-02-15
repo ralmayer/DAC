@@ -27,12 +27,12 @@ export default function Project({
     setTriggered((prevState) => !prevState);
   };
 
-  useEffect(
-    () =>
-      inView &&
-      setAnimationState((prevState) => ({ ...prevState, [title]: true })),
-    [inView]
-  );
+  useEffect(() => {
+    const link = document.getElementById(`${title}-project-link`);
+    inView &&
+      setAnimationState((prevState) => ({ ...prevState, [title]: true }));
+    triggered && setTimeout(() => link.click(), 3000);
+  }, [inView, triggered]);
 
   return (
     <motion.div
@@ -64,11 +64,18 @@ export default function Project({
             From brown to white to <br /> Asian I eat a lot of ass.
           </motion.p>
           <motion.div className="bodylink-container" variants={childVariants}>
-            <Bodylink
-              name="Learn more"
-              destination={title}
-              func={setTriggered}
-            />
+            <div className="bodylink" onClick={() => setTriggered(true)}>
+              Learn more {">"}
+            </div>
+            <div style={{ visibility: "hidden" }}>
+              {" "}
+              <Bodylink
+                name="Learn more"
+                destination={title}
+                id={title}
+                func={setTriggered}
+              />
+            </div>
           </motion.div>
         </div>
       </motion.div>
@@ -76,7 +83,11 @@ export default function Project({
         layout
         className="project-curtain"
         initial={false}
-        animate={{ opacity: 0, display: "none" }}
+        animate={
+          triggered
+            ? { display: "block", opacity: 1 }
+            : { display: "none", opacity: 0 }
+        }
         exit={{ display: "block", opacity: 1 }}
         transition={{ duration: 1 }}
       ></motion.div>

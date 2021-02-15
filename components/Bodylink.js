@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export default function Bodylink({ name, destination, func }) {
+export default function Bodylink({ name, destination, id, func }) {
   return (
     <span className="bodylink">
       {" "}
-      <Link href={destination} scroll={false}>
-        <a onClick={() => func && func(true)}>
+      <Link href={destination}>
+        <a id={`${id}-project-link`} onClick={() => func && func(true)}>
           {" "}
           {name} {">"}
         </a>

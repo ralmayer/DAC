@@ -113,6 +113,7 @@ nav .navlink[data-important="1"]::after {
   background-image: linear-gradient(93.49deg, #5cadf5 -60.49%, #188ff4 74.05%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1064px) {

@@ -65,12 +65,7 @@ export default function ProjectPage() {
         </motion.div>
         <section className="top">
           <div className="wrapper">
-            <motion.div
-              className="img-container"
-              initial="initial"
-              animate="animate"
-              exit={{ opacity: 0 }}
-            >
+            <motion.div className="img-container" exit={{ opacity: 0 }}>
               {" "}
               <Image
                 src="/macbook-large.png"
@@ -127,6 +122,7 @@ export default function ProjectPage() {
               </motion.div>
             </div>
           </motion.div>
+          <div style={{ width: "100%", height: "1000px" }}></div>
         </section>
       </motion.main>
     </>
