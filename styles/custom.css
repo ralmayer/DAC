@@ -156,7 +156,7 @@ nav .navlink[data-important="1"]::after {
 }
 
 .section-content.hero-section {
-  padding: 5rem 0;
+  padding: 1rem 0;
   border-radius: 20px;
 }
 
