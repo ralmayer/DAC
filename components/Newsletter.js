@@ -12,7 +12,7 @@ export default function Newsletter({ variants, childVariants }) {
   const [email, setEmail] = useState(false);
 
   const { ref, inView = true } = useInView({
-    threshold: 0.2,
+    threshold: 0.4,
     triggerOnce: true,
   });
 

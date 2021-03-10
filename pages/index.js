@@ -100,33 +100,42 @@ export default function Home({ projectsData }) {
       </nav>
       <main>
         <section className="home intro">
+          {/* fix this later */}
           <div
-            className="wrapper rounded"
-            style={{ padding: "0 3rem", backgroundColor: "#1D1D1F" }}
+            style={{
+              position: "relative",
+              maxWidth: "1440px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
           >
-            <div className="section-content hero-section">
-              <div className="row">
-                <div className="large-7 column text-col">
-                  <h1>
-                    Leon is a <br /> <span className="important">designer</span>{" "}
-                    and <br /> a{" "}
-                    <span className="important">
-                      full-stack <br /> developer.
-                    </span>{" "}
-                  </h1>
-                  <p>
-                    I eat ass. I eat a lot of ass. I eat ass. I <br /> eat a lot
-                    of ass. From brown to white <br /> to asian I eat a lot of
-                    ass. I eat way too <br />
-                    much ass. It affects my nutrition.{" "}
-                  </p>
-                  <div className="bodylink-container">
-                    <Bodylink name={"Case Studies"} destination="#projects" />
-                    <Bodylink name={"Learn more"} destination="#about" />
+            {" "}
+            <div className="cmGXmw"></div>
+            <div className="wrapper rounded">
+              <div className="section-content hero-section">
+                <div className="row">
+                  <div className="large-7 column text-col">
+                    <h1>
+                      Leon is a <br />{" "}
+                      <span className="important">designer</span> and <br /> a{" "}
+                      <span className="important">
+                        full-stack <br /> developer.
+                      </span>{" "}
+                    </h1>
+                    <p>
+                      I eat ass. I eat a lot of ass. I eat ass. I <br /> eat a
+                      lot of ass. From brown to white <br /> to asian I eat a
+                      lot of ass. I eat way too <br />
+                      much ass. It affects my nutrition.{" "}
+                    </p>
+                    <div className="bodylink-container">
+                      <Bodylink name={"Case Studies"} destination="#projects" />
+                      <Bodylink name={"Learn more"} destination="#about" />
+                    </div>
                   </div>
-                </div>
-                <div className="large-5 column">
-                  <Iphone />
+                  <div className="large-5 column">
+                    <Iphone />
+                  </div>
                 </div>
               </div>
             </div>

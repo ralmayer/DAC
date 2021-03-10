@@ -5,7 +5,6 @@ import "../styles/utils.css";
 import "../styles/flexUtils.css";
 import "../styles/homeAbout.css";
 import "../styles/custom.css";
-import "../styles/burger.css";
 import "../styles/projects.css";
 import "../styles/iphone.css";
 import "../styles/newsletter.css";
